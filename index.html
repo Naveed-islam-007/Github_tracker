@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Github tracker | Login</title>
+    <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+    <!-- Tailwiind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="min-h-screen max-w-md bg-base-200 mx-auto pt-30 space-y-6">
+    <div class="w-[200px] mx-auto">
+        <img class="mx-auto" src="./assets/github-logo.png" alt="" >
+            <h1 class="text-2xl font-bold text-center">Github Tracker</h1>
+            <p class="text-center">Sign in to manage your issues</p>
+    </div>
+
+    <div class="form">
+      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Username</label>
+          <input id="input-username" type="text" class="input" placeholder="Username" />
+          <label class="label">Password</label>
+          <input id="input-password" type="password" class="input" placeholder="Password" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button id="login-btn" class="btn mt-4">Login</button>
+        </fieldset>
+      </div>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+  
 </body>
 </html>
