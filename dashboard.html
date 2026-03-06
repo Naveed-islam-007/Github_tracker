@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+     <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+    <!-- Tailwiind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="grid grid-cols-1 md:flex navbar bg-base-100 shadow-sm justify-between">
+    <div class="flex items-center gap-2 w-[250px]">
+        <img class="w-10 h-10" src="./assets/github-logo.png" alt="">
+        <h2 class="text-xl font-bold">GitHub Issue Tracker</h2>
+        
+    </div>
+
+    <div class="flex gap-2 items-center ">
+        <input type="text" placeholder="Search Issues" class="input input-bordered input-sm w-full max-w-xs" />
+        <button class="btn">+New Issue</button>
+    </div>
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
