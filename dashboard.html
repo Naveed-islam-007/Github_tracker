@@ -22,9 +22,34 @@
 
     <div class="flex gap-2 items-center ">
           <input type="search" placeholder="Search Issues" class="input input-bordered input-sm w-full max-w-xs" />
-        <button class="btn">+New Issue</button>
+        <button class="btn btn-primary">+New Issue</button>
     </div>
 </div>
+
+<div class="w-11/12 mx-auto shadow-md flex gap-5 my-5 p-3">
+     <button class="btn btn-primary">All</button>
+     <button class="btn btn-soft">Open</button>
+     <button class="btn btn-soft">Closed</button>
+</div>
+
+
+    <div class="w-11/12 mx-auto shadow-md flex justify-between">
+       <div class="flex p-5 gap-3">
+         <img src="./assets/Aperture.png" alt="">
+        <div>
+            <h2 class="text-2xl font-bold">50 issues</h2>
+            <p>Track and manage your project issues</p>
+        </div>
+       </div>
+
+       <div class="grid grid-cols-1 md:flex items-center gap-4 mr-5">
+          <div aria-label="status" class="status status-primary "></div>
+              closed
+          <div aria-label="success" class="status status-success"></div>
+          open
+       </div>
+    </div>
+
 
 <script src="dashboard.js"></script>
 
