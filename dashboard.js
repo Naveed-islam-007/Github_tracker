@@ -66,7 +66,7 @@ const displayProjects = (projects) => {
             <div class="flex gap-2">
 
             ${project.labels.map(label => `
-                <span class="badge ${getBadgeClass(label)}">
+                <span class=" badge ${getBadgeClass(label)}">
                 ${label}
                 </span>
             `).join('')}
@@ -120,7 +120,7 @@ async function toggleModal(id) {
     const detail = project.data;
 
     pdetails.innerText = `#${detail.id} ${detail.title}`;
-    author.innerText = `Opened by ${detail.author}`;
+    author.innerText = `${detail.status} by ${detail.author}`;
     date.innerText = `${new Date(detail.createdAt).toLocaleDateString()}`;
 
     if (detail.labels[0]) {
